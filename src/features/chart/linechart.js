@@ -15,17 +15,17 @@ function Linechart() {
       {
         label: "Contact In 2019",
         data: [200, 300, 500, 100, 400],
-        borderColor: ["rgba(255,206,90,0.2)"],
-        backgroundColor: ["rgba(255,206,90,0.2)"],
-        pointBackgroundColr: "rgba(255,206,86,0.2)",
-        pointBorderColor: ["rgba(255,206,86,0.2)"],
+        borderColor: ["rgba(255,206,90,0.5)"],
+        backgroundColor: ["rgba(255,206,90,0.5)"],
+        pointBackgroundColr: "rgba(255,206,90,0.5)",
+        pointBorderColor: ["rgba(255,206,90,0.5)"],
       },
     ],
   };
   const options = {
     title: {
       display: true,
-      text: "Line Chart",
+      text: "Contact Per Country Per Year",
     },
     scales: {
       yAxes: [

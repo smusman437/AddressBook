@@ -34,7 +34,7 @@ export default function Navbarr(props) {
 
           <a
             role="button"
-            className={`navbar-burger is-black mt-4 burger${
+            className={`navbar-burger is-black mt-2 burger${
               isActive ? "is-active" : ""
             }`}
             aria-label="menu"

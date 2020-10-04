@@ -25,15 +25,21 @@ export default function Sidebar({ sideclose, clicked }) {
         </p>
         <ul className="menu-list">
           <li>
-            <NavLink to="/dashboard" activeClassName="has-background-light">
+            <NavLink
+              to="/dashboard"
+              activeClassName="has-background-light has-text-dark"
+            >
               <i className="fas fa-tachometer-alt has-text-info"></i>
-              <p className="has-text-success is-inline p-2">Dashboard</p>
+              <p className="is-inline p-2">Dashboard</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/users" activeClassName="has-background-light">
+            <NavLink
+              to="/users"
+              activeClassName="has-background-light has-text-dark"
+            >
               <i className="fas fa-users has-text-info"></i>{" "}
-              <p className="has-text-success is-inline p-2">Users</p>
+              <p className="is-inline p-2">Users</p>
             </NavLink>
           </li>
         </ul>

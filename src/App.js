@@ -13,12 +13,9 @@ import Dashboard from "./features/dashboard/dashboard";
 
 export default function App() {
   const [sideToggler, setsideToggler] = useState(false);
-  const [side, setside] = useState(false);
+
   const onChangeHandler = () => {
     setsideToggler(!sideToggler);
-    setTimeout(() => {
-      setside(!side);
-    }, 200);
   };
 
   return (
@@ -26,20 +23,16 @@ export default function App() {
       <Navbarr clicked={onChangeHandler} sidebar={sideToggler} />
 
       <div className="columns">
-        {side ? (
-          ""
-        ) : (
-          <div className="column is-one-fifth">
-            <Sidebar sideclose={sideToggler} clicked={onChangeHandler} />
-          </div>
-        )}
+        <div className="column is-one-fifth">
+          <Sidebar sideclose={sideToggler} clicked={onChangeHandler} />
+        </div>
 
         <div className="column">
           <Switch>
             <Route exact path="/users" component={Userlist} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/users/:id" component={Userdetail} />
-            <Redirect from="/" to="/users" />
+            <Redirect from="/" to="/dashboard" />
           </Switch>
         </div>
       </div>

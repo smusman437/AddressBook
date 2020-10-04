@@ -21,7 +21,7 @@ function DoughnutChart() {
   const options = {
     title: {
       display: true,
-      text: "Doughnut Chart",
+      text: "Contacts Per Country",
     },
   };
   return (

@@ -29,10 +29,7 @@ export default function Userlist() {
       <td>{user.name}</td>
       <td>{user.email}</td>
       <td>
-        <NavLink
-          className="button is-success is-rounded"
-          to={`users/${user.id}`}
-        >
+        <NavLink className="button is-link is-rounded" to={`users/${user.id}`}>
           Details
         </NavLink>
       </td>
@@ -44,10 +41,10 @@ export default function Userlist() {
         <table className="table is-bordered  is-fullwidth has-background-light">
           <thead>
             <tr>
-              <th className="has-text-primary">S No:</th>
-              <th className="has-text-primary">Name</th>
-              <th className="has-text-primary">email</th>
-              <th className="has-text-primary">Action</th>
+              <th className="has-text-link">S No:</th>
+              <th className="has-text-link">Name</th>
+              <th className="has-text-link">email</th>
+              <th className="has-text-link">Action</th>
             </tr>
           </thead>
           <tbody>{userList}</tbody>
