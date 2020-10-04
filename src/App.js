@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbarr from "./navbarr";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
   Redirect,
