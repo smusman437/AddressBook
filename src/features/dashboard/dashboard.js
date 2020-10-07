@@ -4,9 +4,9 @@ import Linechart from "../chart/linechart";
 import DoughnutChart from "../chart/doughNutChart";
 
 export default function Dashboard() {
-  const icon1 = <i class="fas fa-users"></i>;
-  const icon2 = <i class="fas fa-flag-usa"></i>;
-  const icon3 = <i class="fas fa-graduation-cap"></i>;
+  const icon1 = <i className="fas fa-users"></i>;
+  const icon2 = <i className="fas fa-flag-usa"></i>;
+  const icon3 = <i className="fas fa-graduation-cap"></i>;
   return (
     <div className="margin m-4 p-5">
       <div className="columns">

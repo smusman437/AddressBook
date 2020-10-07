@@ -42,6 +42,15 @@ export default function Sidebar({ sideclose, clicked }) {
               <p className="is-inline p-2">Users</p>
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/test"
+              activeClassName="has-background-light has-text-dark"
+            >
+              <i className="fas fa-users has-text-info"></i>{" "}
+              <p className="is-inline p-2">Users From sql</p>
+            </NavLink>
+          </li>
         </ul>
       </aside>
     </div>

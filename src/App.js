@@ -10,6 +10,7 @@ import Userlist from "./features/users/userlist";
 import Userdetail from "./features/users/userdetail";
 import Sidebar from "./sidebar";
 import Dashboard from "./features/dashboard/dashboard";
+import Userlistfromsql from "./features/datafromsql/userlist";
 
 export default function App() {
   const [sideToggler, setsideToggler] = useState(false);
@@ -31,6 +32,7 @@ export default function App() {
           <Switch>
             <Route exact path="/users" component={Userlist} />
             <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/test" component={Userlistfromsql} />
             <Route exact path="/users/:id" component={Userdetail} />
             <Redirect from="/" to="/dashboard" />
           </Switch>

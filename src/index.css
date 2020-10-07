@@ -48,3 +48,8 @@ code {
 .boxShadow {
   box-shadow: 5px 5px 5px 5px grey;
 }
+.wrapper {
+  position: fixed;
+  width: 650px;
+  top: 30%;
+}

@@ -32,7 +32,7 @@ export default function Navbarr(props) {
             <h2 className="is-size-5">Address Book</h2>
           </a>
 
-          <a
+          <div
             role="button"
             className={`navbar-burger is-black mt-2 burger${
               isActive ? "is-active" : ""
@@ -45,7 +45,7 @@ export default function Navbarr(props) {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </div>
         </div>
 
         <div
@@ -57,7 +57,7 @@ export default function Navbarr(props) {
               Users
             </NavLink>
 
-            <a className="navbar-item">Documentation</a>
+            <div className="navbar-item">Documentation</div>
           </div>
         </div>
       </nav>
