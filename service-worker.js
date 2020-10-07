@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AddressBook/precache-manifest.877a6b2da8be5c2d074c98d8da2c57aa.js"
+  "/AddressBook/precache-manifest.a37388bf86b17e276d0e824a3a75a671.js"
 );
 
 self.addEventListener('message', (event) => {
