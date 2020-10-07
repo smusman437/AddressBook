@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/AddressBook/static/css/main.f136ac8a.chunk.css",
-    "main.js": "/AddressBook/static/js/main.acac1910.chunk.js",
-    "main.js.map": "/AddressBook/static/js/main.acac1910.chunk.js.map",
+    "main.css": "/AddressBook/static/css/main.b2a9e810.chunk.css",
+    "main.js": "/AddressBook/static/js/main.45b18798.chunk.js",
+    "main.js.map": "/AddressBook/static/js/main.45b18798.chunk.js.map",
     "runtime-main.js": "/AddressBook/static/js/runtime-main.7c28d97e.js",
     "runtime-main.js.map": "/AddressBook/static/js/runtime-main.7c28d97e.js.map",
-    "static/js/2.a895d650.chunk.js": "/AddressBook/static/js/2.a895d650.chunk.js",
-    "static/js/2.a895d650.chunk.js.map": "/AddressBook/static/js/2.a895d650.chunk.js.map",
+    "static/js/2.63d5513d.chunk.js": "/AddressBook/static/js/2.63d5513d.chunk.js",
+    "static/js/2.63d5513d.chunk.js.map": "/AddressBook/static/js/2.63d5513d.chunk.js.map",
     "index.html": "/AddressBook/index.html",
-    "precache-manifest.a37388bf86b17e276d0e824a3a75a671.js": "/AddressBook/precache-manifest.a37388bf86b17e276d0e824a3a75a671.js",
+    "precache-manifest.8f53808e9f236866674ce6629fd3de56.js": "/AddressBook/precache-manifest.8f53808e9f236866674ce6629fd3de56.js",
     "service-worker.js": "/AddressBook/service-worker.js",
-    "static/css/main.f136ac8a.chunk.css.map": "/AddressBook/static/css/main.f136ac8a.chunk.css.map",
-    "static/js/2.a895d650.chunk.js.LICENSE.txt": "/AddressBook/static/js/2.a895d650.chunk.js.LICENSE.txt"
+    "static/css/main.b2a9e810.chunk.css.map": "/AddressBook/static/css/main.b2a9e810.chunk.css.map",
+    "static/js/2.63d5513d.chunk.js.LICENSE.txt": "/AddressBook/static/js/2.63d5513d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7c28d97e.js",
-    "static/js/2.a895d650.chunk.js",
-    "static/css/main.f136ac8a.chunk.css",
-    "static/js/main.acac1910.chunk.js"
+    "static/js/2.63d5513d.chunk.js",
+    "static/css/main.b2a9e810.chunk.css",
+    "static/js/main.45b18798.chunk.js"
   ]
 }
