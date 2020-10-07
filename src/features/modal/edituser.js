@@ -1,13 +1,22 @@
 import Axios from "axios";
 import React, { useState } from "react";
 
-function Edituser({ visible, handleVisibility, selecteduser, handleRender }) {
+function Edituser({
+  visible,
+  handleVisibility,
+  selecteduser,
+  handleRender,
+  notification,
+}) {
   const [user, setuser] = useState(selecteduser);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await Axios.post(`http://localhost:5000/${user.id}`, user);
-      handleRender();
+      notification("Edit data Successfully!");
+      setTimeout(() => {
+        handleRender();
+      }, 2000);
     } catch (error) {
       console.log(error);
     }

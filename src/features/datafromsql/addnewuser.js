@@ -1,8 +1,7 @@
-import userEvent from "@testing-library/user-event";
 import Axios from "axios";
 import React, { useState } from "react";
 
-function Addnewuser({ render }) {
+function Addnewuser({ render, notification }) {
   const initialstate = {
     name: "",
     email: "",
@@ -15,7 +14,10 @@ function Addnewuser({ render }) {
     if (name !== "" && email !== "") {
       try {
         await Axios.post("http://localhost:5000/", user);
-        render();
+        notification("Add User Successfully!");
+        setTimeout(() => {
+          render();
+        }, 2000);
       } catch (error) {
         console.log(error);
       }

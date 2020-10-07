@@ -12,6 +12,12 @@ function Userlistfromsql() {
   //for modal visibility
   const [visible, setvisible] = useState(false);
 
+  //for notification message visibility
+  const [msgvisibility, setmsgvisibility] = useState(false);
+
+  //for display  notification message
+  const [message, setmessage] = useState("");
+
   //select user for edit
   const [selectedUser, setselectedUser] = useState({
     id: "",
@@ -33,6 +39,11 @@ function Userlistfromsql() {
     Axios.delete(`http://localhost:5000/${id}`)
       .then((res) => {
         handleRender();
+        setmessage("Deleted Data Successfully!!!");
+        setmsgvisibility(true);
+        setTimeout(() => {
+          setmsgvisibility(false);
+        }, 2000);
       })
       .catch((err) => console.log("error in deletion"));
   };
@@ -51,6 +62,13 @@ function Userlistfromsql() {
     handleVisibility();
   };
 
+  const handleNotification = (msg) => {
+    setmessage(msg);
+    setmsgvisibility(true);
+    setTimeout(() => {
+      setmsgvisibility(false);
+    }, 2000);
+  };
   const userList = users.map((user) => (
     <tr key={user.id}>
       <td>{user.id}</td>
@@ -71,8 +89,19 @@ function Userlistfromsql() {
   ));
   return (
     <div className="margin m-4 p-5">
+      <div className={"row " + (msgvisibility ? "notif" : "notif close")}>
+        <div className="notification  is-success ">
+          <button
+            className="delete has-background-danger"
+            onClick={() => {
+              setmsgvisibility(!msgvisibility);
+            }}
+          ></button>
+          <strong>{message}</strong>
+        </div>
+      </div>
       <div className="section row has-background-light">
-        <Addnewuser render={handleRender} />
+        <Addnewuser render={handleRender} notification={handleNotification} />
       </div>
       <div className="section row mt-3 has-background-light">
         <div className="table-container">
@@ -95,6 +124,7 @@ function Userlistfromsql() {
           handleVisibility={handleVisibility}
           selecteduser={selectedUser}
           handleRender={handleRender}
+          notification={handleNotification}
         />
       ) : (
         ""

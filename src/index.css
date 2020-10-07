@@ -23,6 +23,7 @@ code {
   z-index: 10;
   animation: slideopen 0.75s forwards;
 }
+
 @keyframes slideopen {
   100% {
     left: 0;
@@ -52,4 +53,26 @@ code {
   position: fixed;
   width: 650px;
   top: 30%;
+}
+.notif {
+  position: fixed;
+  margin: auto;
+  right: -100%;
+  top: 74px;
+  z-index: 10;
+  animation: notifeopen 0.75s forwards;
+}
+@keyframes notifeopen {
+  100% {
+    right: 0;
+  }
+}
+.notif.close {
+  right: 0;
+  animation: notifclose 0.75s forwards;
+}
+@keyframes notifclose {
+  100% {
+    right: -100%;
+  }
 }
